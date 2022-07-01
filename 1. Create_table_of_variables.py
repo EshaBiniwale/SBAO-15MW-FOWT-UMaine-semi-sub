@@ -3,15 +3,15 @@ import pandas as pd
 
 wdepth = 200.0                                  # water depth
 R_fairlead = 58.0                               # radius from origin to fairlead (in xy-plane)
-mooring_seabed = 10.0
+mooring_seabed = 10.0                           # minimum length of mooring line lying on sea-bed
 
 L_value_list = []
 R_anchor_value_list = []
 z_fairlead_value_list = []
 
-for L in range(800, 901, 10):                       #specify range for unstretched length of mooring line
-    for R_anchor in range(800, 901, 10):            #specify range for radius from origin to anchor (in xy-plane)
-        for z_fairlead in range(0, 20):             #specify range for z-pos of fairlead
+for L in range(800, 901, 10):                       # specify range for unstretched length of mooring line
+    for R_anchor in range(800, 901, 10):            # specify range for radius from origin to anchor (in xy-plane)
+        for z_fairlead in range(0, 20):             # specify range for z-pos of fairlead
             L_value_list.append(L)
             R_anchor_value_list.append(R_anchor)
             z_fairlead_value_list.append(z_fairlead)
