@@ -29,4 +29,4 @@ df.to_csv('L_R_z_values.csv')
 
 df_clean = df.loc[df['Disrupt Constraint'] == 'Pass'].reset_index()
 
-# df_clean.to_csv('L_R_z_values_pass.csv', index=False)
+df_clean.to_csv('L_R_z_values_pass.csv', index=False)
