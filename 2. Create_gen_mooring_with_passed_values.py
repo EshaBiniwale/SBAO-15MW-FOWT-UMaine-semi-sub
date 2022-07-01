@@ -14,11 +14,8 @@ def Changing_parameter(df):
     cm  = 1.82
     cdp = 1.11
     cdl = .20               
-    #L = L_value           # un-stretched length of mooring lines
-    #R_anchor   = R_anchor      # radius from origin to anchor (in xy-plane)
     R_fairlead = 58.0       # radius from origin to fairlead (in xy-plane)
-    z_anchor    = wdepth    # z-pos of anchor (at bottom)
-    #z_fairlead  = z_fairlead      # z-pos of fairlead
+    z_anchor   = wdepth     # z-pos of anchor (at bottom)
     z_ifb = -15.0           # z-pos of interface body (body ifb)
     nelem = 20
 
